@@ -1,0 +1,60 @@
+/* CSS for Structure.tsx component */
+
+.custom-tabview .p-tabview-nav {
+  background: transparent;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.custom-tabview .p-tabview-nav li .p-tabview-nav-link {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #6c757d;
+  margin-bottom: -1px;
+}
+
+.custom-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  color: #043c86;
+  border-bottom-color: #043c86;
+  background: transparent;
+}
+
+.custom-tabview .p-tabview-panels {
+  background: transparent;
+  padding: 1rem 0;
+}
+
+/* CSS for accordian */
+
+.p-accordion-header-link{
+  display: flex;
+  flex-direction: row-reverse;
+  text-decoration: none;
+}
+.p-accordion-header-text{
+  color: black;
+  font-weight: 500;
+}
+.p-accordion-toggle-icon{
+  color: black;
+}
+
+.p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link{
+  background: #3c82f657;
+  border-color: #3c82f657;
+  border-bottom: none;
+}
+.p-accordion .p-accordion-content{
+border: 1px solid #3c82f657;
+}
+
+.fees-structure-tab .p-tabview-nav-link{
+  text-decoration: none;
+}
+ 
+/* CSS for Mobile view */
+@media (max-width: 768px) {
+  .fee-structure-wrapper .card-body{
+    padding: 0.5rem !important;
+  }
+}

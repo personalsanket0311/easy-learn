@@ -1,0 +1,277 @@
+/* Testimonials Section Styles */
+.testimonials-section {
+  padding: 3rem 0;
+  background: linear-gradient(135deg, #000000 0%, #14acac 50%, #000000 100%);
+}
+
+/* Background Effects */
+.gradient-mesh {
+  background: #f8f9fc;
+  
+}
+
+.light-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(48px);
+}
+
+.light-orb-1 {
+  top: 33%;
+  left: 20%;
+  width: 18rem;
+  height: 18rem;
+  background: rgba(99, 102, 241, 0.15);
+}
+
+.light-orb-2 {
+  bottom: 33%;
+  right: 20%;
+  width: 20rem;
+  height: 20rem;
+  background: rgba(244, 63, 94, 0.15);
+}
+
+.floating-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+/* Header Styles */
+.badge-container {
+  background: ivory;
+  border: 1px solid #0e373e;
+  backdrop-filter: blur(8px);
+}
+
+.sparkles-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #0e373e;
+}
+
+.badge-text {
+  font-size: 0.875rem;
+  color: #0e373e;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #0e373e;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.gradient-text-white {
+  background: linear-gradient(to right, #1c0b0b, rgba(17, 11, 11, 0.8));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradient-text-colored {
+  /* background: linear-gradient(to right, rgb(165, 180, 252), rgb(196, 181, 253), rgb(253, 164, 175)); */
+  background: linear-gradient(90deg, #3bb6ba, #0e373e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200% 200%;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color:#0a0707
+  
+}
+
+/* Testimonial Container */
+.testimonial-container {
+  max-width: 96rem;
+}
+
+.testimonial-viewport {
+  height: 31.25rem;
+  perspective: 1000px;
+}
+
+.testimonial-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+ 
+}
+
+.card-gradient {
+  background: #339fa5
+  
+}
+
+.quote-icon {
+  opacity: 0.2;
+}
+
+.quote-svg {
+  width: 4rem;
+  height: 4rem;
+  color: white;
+}
+
+/* User Info Styles */
+.avatar-container {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.avatar-overlay {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(244, 63, 94, 0.2));
+}
+
+.avatar-ring {
+  border: 2px solid rgba(99, 102, 241, 0.3);
+  border-radius: 50%;
+}
+
+.role-text {
+  color: #ffb300;
+}
+
+.company-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.star-rating {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: rgb(250, 204, 21);
+  color: rgb(250, 204, 21);
+}
+
+/* Testimonial Content */
+.testimonial-quote {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.result-badge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ffffff6e;
+  backdrop-filter: blur(4px);
+  transition: background-color 0.3s ease;
+}
+
+.result-text {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Navigation Controls */
+.nav-button {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  color: #3bb6ba;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #3bb6ba;
+}
+
+.nav-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.dot-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(19, 5, 5, 0.3);
+  transition: all 0.3s ease;
+}
+
+.dot-indicator:hover {
+  background: rgba(19, 5, 5, 0.3);
+}
+
+.dot-indicator.active {
+  background: #3bb6ba
+ 
+}
+
+/* Stats Section */
+.stat-item {
+  transition: transform 0.3s ease;
+}
+
+.stat-number {
+  background:  linear-gradient(to right, #fca5a5, #de0e0e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.stat-label {
+  color: rgba(6, 0, 0, 0.6);
+  transition: color 0.3s ease;
+}
+
+.stat-item:hover .stat-label {
+  color: rgba(6, 0, 0, 0.6);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .testimonial-viewport {
+    height: 25rem;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    color: #0a0707;
+  }
+  
+  .testimonial-quote {
+    font-size: 22px;
+  }
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Utility Classes */
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+/* css for mobile */
+@media (max-width: 768px) {
+  .testimonial-viewport {
+  height: 44.25rem !important;
+}
+   
+}

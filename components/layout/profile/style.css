@@ -1,0 +1,89 @@
+.edit-btn, .logout-btn {
+    width: 10rem;
+}
+
+.edit-btn {
+    background-color: #1A78E5;
+    color: #F2F2F5;
+}
+
+.logout-btn {
+    background-color: #F2F2F5;
+    color: #000000;
+    border: none;
+}
+
+/* Edit Profile Dialog Styles */
+.dialog-container {
+    input {
+        background-color: #E8EDF2;
+        color: #4F7096 !important;
+        border-radius: 12px;
+    }
+    ::placeholder {
+        color: #4F7096 !important;
+    }
+}
+
+.cancel-btn, .update-btn {
+    width: 12rem;
+}
+
+.cancel-btn {
+    background-color: #F2F2F5;
+    color: #1A78E5;
+}
+
+.cancel-btn:hover {
+    background-color: #1A78E5;
+    color: #F2F2F5;
+}
+
+.update-btn {
+    background-color: #1A78E5;
+    color: #F2F2F5;
+}
+
+.update-btn:hover {
+    background-color: #F2F2F5;
+    color: #1A78E5;
+}
+
+.min-width-140 {
+    min-width: 140px !important;
+}
+
+.custom-tabs ul{
+  padding-left: 0;
+}
+
+
+/* Edit Profile Responsive Styles */
+@media (max-width: 600px) {
+  .responsive-dialog {
+    width: 95vw !important;
+    min-width: unset !important;
+    padding: 1rem;
+  }
+  .profile-row {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+  .profile-row input,
+  .profile-row .cancel-btn,
+  .profile-row .update-btn {
+    width: 100% !important;
+    margin-bottom: 0.5rem;
+  }
+  .profile-row .cancel-btn,
+  .profile-row .update-btn {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .purchased-course-card{
+    text-align: start !important;
+  }
+  
+}

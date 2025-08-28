@@ -1,0 +1,110 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+}
+
+.inquiry-container {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Dialog Header */
+.inquiry-dialog .p-dialog-header {
+  background: linear-gradient(to right, #26789b, #036341); /* Indigo to Purple */
+  color: #e0e0e0;
+  font-size: 1.25rem;
+  padding: 1.2rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: 1px solid #2f3b60;
+}
+
+/* Dialog Content */
+.inquiry-dialog .p-dialog-content {
+  background: #e0e0e0;
+  backdrop-filter: blur(12px);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 2rem;
+  color: #e0e0e0;
+}
+
+/* Labels */
+.inquiry-form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #2e353d;
+  font-size: 0.95rem;
+}
+
+/* Inputs */
+.input-field {
+  border-radius: 10px;
+  border: 1px solid #334155;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  background-color: #e0e0e0;
+  color: #334155;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.input-field:focus {
+  border-color: none  ;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.4);
+  background-color: #e0e0e0;
+}
+
+/* Textarea */
+textarea.input-field {
+  resize: none;
+}
+
+/* Submit Button */
+.submit-button {
+  background: linear-gradient(to right, #26789b, #036341);/* Cyan to Neon Blue */
+  border: none;
+  font-size: 1rem;
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 0 4px 14px rgba(6, 182, 212, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right, #036341, #26789b);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.5);
+}
+
+/* Error messages */
+.text-danger {
+  font-size: 0.8rem;
+  margin-top: 4px;
+  color: #f87171;
+}
+
+/* Close icon */
+.p-dialog-header-close-icon {
+  border: none !important;
+  width: 1.6rem !important;
+  height: 1.6rem !important;
+  box-sizing: border-box !important; /* ✅ fixed value */
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon:enabled:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+.p-dialog .p-dialog-header .p-dialog-header-icon:enabled:hover {
+  outline: none !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .inquiry-dialog .p-dialog-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}

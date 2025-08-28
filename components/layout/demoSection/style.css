@@ -1,0 +1,60 @@
+.bg-darkgreen {
+  background-color: #339fa5;
+}
+.bg-lightgreen {
+  background-color: #8df9ff;
+}
+
+.animated-btn {
+  transition: background 0.3s ease, transform 0.2s;
+}
+.animated-btn .p-button-label {
+  font-size: 16px !important;
+}
+.animated-btn:hover:not(:disabled) {
+  background-color: #164c53;
+  transform: scale(1.04);
+}
+
+/* styles/style.css */
+@media (max-width: 991px) {
+  .mobile-floating-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050;
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+/* Form animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.animated-form {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* css for desktop */
+
+@media (min-width: 667px) {
+  .left-wrapper {
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+}
+@media (max-width: 667px) {
+  .free-course-left-wrapper {
+    padding-left: 12px !important;
+  }
+}

@@ -1,0 +1,251 @@
+.navbar-login-button.p-button:focus {
+  box-shadow: none !important;
+}
+.p-button:focus {
+  box-shadow: none !important;
+}
+.notification-panel {
+  width: 350px;
+}
+.min-width-110 {
+  min-width: 110px;
+}
+.custom-navbar {
+ display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: beige; 
+  position: absolute !important;
+  top: 12px !important;
+  border-radius: 54px;
+  width: 92%;
+  left: 4%;
+  z-index: 20 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-navbar {
+    align-items: center;
+  }
+}
+
+/* Base link styling with dropdown container */
+.navbar-link-group {
+  position: relative;
+}
+
+.navbar-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-link-group:hover .navbar-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.navbar-dropdown a {
+  display: block;
+  color: #333;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-dropdown a:hover {
+  color: #0d6efd;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.navbar-link-hover:hover {
+  color: #00b7b7 !important;
+  text-decoration: underline !important;
+  font-weight: 600 !important;
+}
+
+.navbar-link-active {
+  color: #00b7b7 !important;
+  text-decoration: underline !important;
+  font-weight: 600 !important;
+}
+
+.navbar-login-button.p-button:focus {
+  box-shadow: none !important;
+}
+.p-button:focus {
+  box-shadow: none !important;
+}
+.notification-panel {
+  width: 350px;
+}
+.min-width-110 {
+  min-width: 110px;
+}
+
+.custom-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-navbar {
+    align-items: center;
+  }
+}
+
+/* Base link styling with dropdown container */
+.navbar-link-group {
+  position: relative;
+}
+
+.navbar-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-link-group:hover .navbar-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.navbar-dropdown a {
+  display: block;
+  color: #333;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-dropdown a:hover {
+  color: #0d6efd;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+/* Enhanced navbar link hover effects */
+.navbar-link {
+  position: relative;
+  transition: color 0.3s ease;
+  text-decoration: none !important;
+}
+
+.navbar-link:hover {
+  color: #ff3130 !important;
+  text-decoration: none !important;
+}
+
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff3130;
+  transition: width 0.3s ease;
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+/* Active/selected menu item styling */
+.navbar-link.active {
+  color: #ff3130 !important;
+  font-weight: 600 !important;
+}
+
+.navbar-link.active::after {
+  width: 100%;
+}
+
+/* Mobile menu link styling */
+.mobile-navbar-link {
+  position: relative;
+  transition: color 0.3s ease;
+  text-decoration: none !important;
+  display: block;
+  padding: 0;
+}
+
+.mobile-navbar-link:hover {
+  color: #ff3130 !important;
+  text-decoration: none !important;
+}
+
+.mobile-navbar-link::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff3130;
+  transition: width 0.3s ease;
+}
+
+.mobile-navbar-link:hover::after {
+  width: 100%;
+}
+
+/* Active mobile menu item styling */
+.mobile-navbar-link.active {
+  color: #ff3130 !important;
+  font-weight: 600 !important;
+}
+
+.mobile-navbar-link.active::after {
+  width: 100%;
+}
+
+/* Ensure proper spacing for underline effect */
+.navbar-link-container {
+  padding-bottom: 0px;
+}
+
+/* Override Bootstrap text-decoration utilities */
+.navbar-link.text-decoration-none:hover,
+.mobile-navbar-link.text-decoration-none:hover {
+  text-decoration: none !important;
+}
+
+.nav-buttons:hover {
+  color: #ff3130 !important;
+  text-decoration: none !important;
+}
+.nav-avtar:hover {
+  background-color: #ff3130;
+  color: #f8f9fa;
+  text-decoration: none;
+}
+.navbar-link-container {
+  padding-bottom: 0;
+}

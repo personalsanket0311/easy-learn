@@ -1,0 +1,177 @@
+/* Certificate Grid Layout */
+.certificate-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.certificateCard {
+  border: 1px solid #e4e2fc;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.certificateBody {
+  background-color: white;
+  border: 1px solid #eee;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificateBody::before,
+.certificateBody::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #c8bfff 0 5px,
+    transparent 5px 10px
+  );
+  opacity: 0.1;
+}
+
+.certificateBody::before {
+  left: 0;
+}
+
+.certificateBody::after {
+  right: 0;
+}
+
+.title {
+  color: #7b3ff3;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.name-placeholder {
+  margin: 1.5rem 0;
+  height: 40px;
+}
+
+/* Utilities */
+.py-3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.p-5 {
+  padding: 3rem;
+}
+
+.px-5 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.my-4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.rounded-4 {
+  border-radius: 0.75rem;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.875rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .certificate-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certificateBody::before,
+  .certificateBody::after {
+    width: 40px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .certificateContent {
+    padding: 2rem;
+  }
+
+  .signature-line {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .px-md-5 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .d-none.d-md-block {
+    display: none !important;
+  }
+}

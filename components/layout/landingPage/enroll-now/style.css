@@ -1,0 +1,103 @@
+.enroll-card.unified-card {
+  background: #ecf2ff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e6efff;
+  text-align: center;
+}
+
+.unlock-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.original-price {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.current-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.enroll-button {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 8px 32px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  margin-bottom: 12px;
+}
+
+.enroll-button:hover {
+  background: #333;
+  transform: translateY(-1px);
+}
+
+.guarantee {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+
+.details-title {
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  justify-content: flex-start;
+}
+
+.details-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; /* center the whole list in the card */
+  max-width: 280px; /* optional: limits list width for better layout */
+  text-align: left; /* ensures list content aligns to the left */
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 0;
+  font-size: 0.9rem;
+  color: #555;
+  border-bottom: 1px solid #f5f5f5;
+  justify-content: flex-start; /* <-- aligns icon and text to the left */
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.bullet {
+  color: #666;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .enroll-card {
+    margin-top: 20px;
+  }
+
+  .current-price {
+    font-size: 1.8rem;
+  }
+}

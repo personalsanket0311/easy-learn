@@ -1,0 +1,75 @@
+/* Smooth transition on card */
+.benefit-card {
+  background: #ffffff;
+	border-radius: 12px;
+	/* transition: all .1s ease-in; */
+	/* box-shadow: 0 12px 88px #49e6eb5e; */
+	/* box-shadow: 0 12px 88px #fffff094; */
+  border: 2px solid #3bb6ba;
+}
+
+/* On hover: card scales slightly & bg gradient shows */
+/* .benefit-card:hover { */
+  /* transform: translateY(-4px); */
+  /* background: linear-gradient(to bottom right, #f3f3fe, #00b7b7); */
+  /* background-color: #043c86de;
+  box-shadow: 0 20px 40px rgba(13, 110, 253, 0.1); */
+/* } */
+
+/* Overlay hover effect */
+.hover-overlay {
+  transition: opacity 0.4s ease-in-out;
+  background: linear-gradient(to top, rgba(13, 110, 253, 0.05), transparent);
+  z-index: 0;
+}
+
+/* Hover bar */
+.hover-bar {
+  width: 4px;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 0 8px 8px 0;
+  transition: background-color 0.4s ease-in-out;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* When card is hovered, show blue bar */
+.benefit-card:hover .hover-bar {
+  background-color: #ff3130;
+}
+
+/* Image style */
+.benefit-icon {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Title formatting */
+.card-body h5 {
+  font-size: 1.1rem;
+}
+
+/* Paragraph styling */
+.card-body p {
+  color: #6c757d;
+}
+
+.benefit-title {
+  color: #343a40;
+  font-weight: 600;
+}
+/* .benefit-card:hover .benefit-title{
+  color: #f8fcff;
+  font-weight: 600;
+} */
+
+.benefit-subtitle {
+  color: #343a40;
+}
+/* .benefit-card:hover .benefit-subtitle{
+  color: #f8fcff;
+} */

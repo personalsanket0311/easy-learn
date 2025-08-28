@@ -1,0 +1,112 @@
+.curriculum-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: start;
+  /* padding: 1rem; */
+}
+
+.curriculum-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1),
+              0 1px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.curriculum-header {
+  padding: 1.5rem;
+}
+
+.curriculum-header h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.module-card {
+  margin-bottom: 0.75rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1),
+              0 1px 2px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.module-card:hover {
+  background-color: #f5f7f9;
+}
+
+.module-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.module-header span {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 1rem;
+}
+
+.module-content {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.module-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.module-content li {
+  color: #4f545e;
+  display: flex;
+  align-items: flex-start;
+  padding: 0.25rem 0;
+}
+
+.module-content li span:first-child {
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 768px) {
+  .curriculum-grid {
+    grid-template-columns: 1fr;
+    
+  }
+
+  .curriculum-header h3 {
+    font-size: 1.1rem;
+  }
+
+  .module-header span {
+    font-size: 0.95rem;
+  }
+
+  .module-content li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .module-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .module-header span {
+    font-size: 0.95rem;
+  }
+
+  .curriculum-header {
+    padding: 1rem;
+  }
+}
