@@ -1,0 +1,15 @@
+.custom-btn {
+  background-color: #add8e6; /* light blue */
+  border: none;
+  color: #333;
+  transition: border 0.3s ease;
+}
+
+.custom-btn:hover {
+  border: 1px solid #007bff; /* blue border on hover */
+}
+
+.bg-blue {
+  background-color: #00b7b7 !important;
+  color: white;
+}

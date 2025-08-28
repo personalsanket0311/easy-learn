@@ -1,0 +1,34 @@
+
+.table-custom {
+  border-radius: 12px;
+  overflow: auto;
+ 
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+.table th {
+  color: #ffffff;
+  font-weight: 600;
+  text-align: left;
+   background-color: #00b7b7;
+}
+
+.table td {
+  background-color: #fff;
+
+}
+
+.table tr:hover {
+  background-color: #90ffff !important;
+  transition: background-color 0.3s;
+}
+
+.table{
+    /* --bs-table-hover-color: #90ffff !important; */
+    --bs-table-hover-bg: #00b7b74f !important;
+}

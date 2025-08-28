@@ -1,0 +1,48 @@
+.form-control:focus{
+  box-shadow: none;
+}
+.form-control.is-invalid:focus{
+  box-shadow: none;
+}
+.form-border .border-secondary{
+  border-color: #ced4da !important;
+}
+
+.form-control {
+  min-height: 40px;
+}
+
+.auth-input-wrapper {
+  position: relative;
+}
+
+.auth-icon-left {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.auth-icon-right {
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
+  color: #6c757d;
+  cursor: pointer;
+}
+
+.auth-form-control {
+  padding-left: 2.25rem !important;
+  background-color: transparent !important;
+  color: #fff !important;
+}
+
+.auth-form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-home{
+  background-image: url('/tech3.jpg');
+}

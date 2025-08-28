@@ -1,0 +1,14 @@
+.contact-input:focus-visible {
+  outline: none;
+  box-shadow: none !important;
+}
+.contact-label{
+    position: relative;
+    left: 2px;
+    font-size: 15px;
+}
+.contact-map {
+  border-radius: 8px;
+  background-color: #37acb1;
+  padding: 1px;
+}
